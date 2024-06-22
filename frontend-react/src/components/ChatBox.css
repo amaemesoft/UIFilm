@@ -1,0 +1,51 @@
+/* src/components/ChatBox.css */
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #e5ddd5;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.message {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 60%;
+}
+
+.message.Ama {
+  background-color: #DCF8C6;
+  align-self: flex-start;
+}
+
+.message.Marta {
+  background-color: #FFFFFF;
+  align-self: flex-end;
+}
+
+.typing-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.date-separator {
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px 10px;
+  background-color: #f0f0f0; /* Color gris más claro */
+  border-radius: 12px; /* Bordes redondeados */
+  display: inline-block;
+  color: gray;
+  font-size: 0.8em;
+  font-weight: bold;
+  align-self: center; /* Asegura que el recuadro esté centrado */
+}

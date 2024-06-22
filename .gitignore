@@ -1,0 +1,6 @@
+node_modules/
+build/
+*.env
+*.log
+*.json
+backend/qwiklabs-asl-01-7f03db02be0f-480a14856c16.json

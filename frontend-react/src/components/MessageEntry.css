@@ -1,0 +1,48 @@
+/* src/components/MessageEntry.css */
+
+.message-entry {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  position: relative;
+}
+
+.message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.icon {
+  width: 20px; /* Redimensionar iconos */
+  height: 16px; /* Redimensionar iconos */
+  cursor: pointer;
+  margin: 0 8px; /* Agregar margen entre los iconos */
+}
+
+.plus-icon {
+  width: 16px; /* Redimensionar icono */
+  height: 16px; /* Redimensionar icono */
+}
+
+.send-button {
+  margin-left: 8px;
+  width: 16px; /* Redimensionar icono */
+  height: 16px; /* Redimensionar icono */
+  margin-bottom: 2px; /* Ajuste manual de la posición */
+}
+
+.camera-icon {
+  width: 20px; /* Redimensionar icono */
+  height: 16px; /* Redimensionar icono */
+  margin-top: 1px; /* Ajuste manual de la posición */
+}
+
+.audio-icon {
+  width: 16px; /* Redimensionar icono */
+  height: 16px; /* Redimensionar icono */
+  margin-bottom: 1px; /* Ajuste manual de la posición */
+}

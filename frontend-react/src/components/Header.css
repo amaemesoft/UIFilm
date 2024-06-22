@@ -1,0 +1,59 @@
+/* src/components/Header.css */
+
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #075E54;
+  padding: 10px;
+  color: white;
+  font-family: 'Calibri', sans-serif;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.status img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  margin-left: 10px; /* Agregar margen entre los iconos */
+}
+
+.video-icon {
+  width: 20px !important; /* Ajustar el tamaño del icono de video */
+  height: 16px !important; /* Ajustar el tamaño del icono de video */
+  margin-top: 2px; /* Ajuste manual de la posición */
+}
+
+.phone-icon {
+  width: 16px !important; /* Ajustar el tamaño del icono de teléfono */
+  height: 18px !important; /* Ajustar el tamaño del icono de teléfono */
+  margin-top: 4px; /* Ajuste manual de la posición */
+}

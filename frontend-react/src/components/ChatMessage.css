@@ -1,0 +1,81 @@
+/* src/components/ChatMessage.css */
+
+.chat-message {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 30%;
+}
+
+.chat-message.marta {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  text-align: left;
+}
+
+.chat-message.ama {
+  align-self: flex-start;
+  background-color: #fff;
+  text-align: left;
+}
+
+.message-bubble {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.message-text {
+  font-size: 1em;
+}
+
+.message-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.message-time {
+  font-size: 0.7em;
+  color: gray;
+  margin-right: 3px;
+}
+
+.message-ticks {
+  width: 17px;
+  height: 10px;
+}
+
+/* Ajustes específicos para imágenes y audios */
+.image-message {
+  margin: 10px 0;
+}
+
+.image-message img {
+  width: 100%; /* Asegura que la imagen ocupe el ancho total del contenedor */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+
+/* Estilos específicos para mensajes de audio */
+.audio-message-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 0;
+  background-color: transparent;
+  
+}
+
+.audio-message-container audio {
+  width: 1000%;
+  margin: 0;
+  border-radius: 10px;
+}
