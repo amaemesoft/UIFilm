@@ -54,6 +54,9 @@ def refresh_gui():
     except requests.exceptions.ConnectionError:
         return False
 
+# Importa la aplicación Flask desde appmodos
+from appmodos import app
+
 if __name__ == "__main__":
     backend_process = start_backend()
     print("Starting backend...")

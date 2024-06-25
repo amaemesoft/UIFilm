@@ -8,10 +8,10 @@ import random
 import requests
 import time
 
-from config import PROJECT_ID, REGION, GOOGLE_APPLICATION_CREDENTIALS
+from config import PROJECT_ID, REGION
 
 # Configura las credenciales
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = GOOGLE_APPLICATION_CREDENTIALS
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "D:/despliegue UIFilm/qwiklabs-asl-01-7f03db02be0f-b9ac5247d7a6.json"
 
 # Inicializa Vertex AI
 vertexai.init(project=PROJECT_ID, location=REGION)
@@ -280,5 +280,10 @@ def load_script():
     else:
         return jsonify({'error': 'Request must be JSON'}), 400
 
+# Modificar la función principal
+@app.route('/')
+def hello():
+    return "Hello, World!"
+
 if __name__ == '__main__':
-    app.run(port=8080)
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
